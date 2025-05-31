@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Media Responsive</title>
+  <title>Project one</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -64,11 +63,12 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
-    }
+    }       }       }
 
     .gallery img:hover {
       transform: scale(1.05);
     }
+    
 
     .card-container {
       display: grid;
@@ -135,35 +135,40 @@
 <body>
 
   <header>
-    <h1>Media Digital Saya</h1>
+    <h1>Konten Kita Bersama</h1>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#">Galeri</a></li>
-      <li><a href="#">Artikel</a></li>
-      <li><a href="#">Video</a></li>
+   <li><a href="#Beranda">Beranda</a></li>
+   <li><a href="#Galeri">Galeri</a></li>
+   <li><a href="#Artikel">Artikel</a></li>
+   <li><a href="#Video">Video</a></li>
+      <li><a href="#Audio">Audio</a></li>
     </ul>
   </nav>
 
   <main>
-    <h2>Galeri Foto</h2>
+               
+     <h2 id="Galeri">Galeri Foto</h2>
     <div class="gallery">
+     <!-- Gambar-gambar -->        
       <img src="https://cdn.pixabay.com/photo/2017/08/06/03/17/headphones-2588235_1280.jpg" alt="Gambar 1">
       <img src="https://raw.githubusercontent.com/Cakren574/Project-media453/main/1747278326697.jpg" alt="Gambar 2">
-      <img src="https://cdn.pixabay.com/photo/2016/11/18/15/03/aurora-1838334_1280.jpg" alt="Gambar 3">
+      <img src="https://cdn.pixabay.com/photo/2016/09/06/18/22/visitors-1649815_1280.jpg" alt="Gambar 3">
+      <img src="https://cdn.pixabay.com/photo/2016/09/10/16/05/art-1659450_1280.jpg" alt="Gambar 4">
+      <img src="https://cdn.pixabay.com/photo/2021/07/19/03/42/man-6477113_1280.jpg" alt="Gambar 5">
     </div>
 
-    <h2>Artikel Terbaru</h2>
+    <h2 id="Artikel">Artikel Terbaru</h2>
     <div class="card-container">
       <div class="card">
-        <img src="https://source.unsplash.com/300x200/?news" alt="Berita 1">
-        <h3>Judul Berita 1</h3>
-        <p>Ini adalah ringkasan singkat dari berita pertama yang menarik.</p>
+        <img src="https://cdn.pixabay.com/photo/2014/11/03/10/44/camera-514992_1280.jpg" alt="Berita 1" style="width: 3px; height: 150px">
+        <h3>Seorang anggota dewan</h3>
+        <p>Sebuah narasi terkait liga korupsi</p>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/300x200/?technology" alt="Berita 2">
+       <img src="https://source.unsplash.com/300x200/?technology" alt="Berita 2">
         <h3>Judul Berita 2</h3>
         <p>Berita ini membahas tentang perkembangan teknologi terbaru.</p>
       </div>
@@ -174,13 +179,13 @@
       </div>
     </div>
 
-    <h2>Audio</h2>
+    <h2 id="Audio">Audio</h2>
     <audio controls>
       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
       Browser tidak mendukung pemutar audio.
     </audio>
 
-    <h2>Video</h2>
+    <h2 id="Video">Video</h2>
     <video controls>
       <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
       Browser tidak mendukung video.
