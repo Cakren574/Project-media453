@@ -5,24 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project one</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <header>
-    <h1>Galeri Kita</h1>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#Beranda">Beranda</a></li>
+  <header class="main-header">
+  <img src="https://raw.githubusercontent.com/Cakren574/Project-media453/refs/heads/main/images/home.png" alt="Logo" class="logo">
+     <!-- Tombol kembali ke Beranda -->
+ 
+  </header>
+  
+   <a href="index.html" class="back-button">
+    <i class="fas fa-home"></i> Beranda
+  </a>
+
+  <nav class="navbar">     
+    <ul>        
       <li><a href="#Galeri">Galeri</a></li>
       <li><a href="#Artikel">Artikel</a></li>
       <li><a href="#Video">Video</a></li>
       <li><a href="#Audio">Audio</a></li>
     </ul>
+    <!-- navigasi    down    instant -->
   </nav>
 
   <main>
+   <!--     Galeri  upside   images -->
     <h2 id="Galeri">Galeri Foto</h2>
     <div class="gallery">
       <img src="https://cdn.pixabay.com/photo/2017/08/06/03/17/headphones-2588235_1280.jpg" alt="Galeri 1">
@@ -31,43 +40,108 @@
       <img src="images/Sun.jpg" alt="Galeri 4">
       <img src="images/View1.jpg" alt="Galeri 5">
       <img src="https://cdn.pixabay.com/photo/2021/07/19/03/42/man-6477113_1280.jpg" alt="Galeri 6">
+      <img src="https://cdn.pixabay.com/photo/2017/08/06/03/17/headphones-2588235_1280.jpg" alt="Galeri 6">
     </div>
+    <!-- down        images     side -->
+    <!-- Galeri     upside    popup -->
     <div class="overlay" id="popup">
-      <img src="" id="popup-img" alt="Pop-upBesar">
+      <img src=""
+alt="Popup 1" id="popup-img"">
 </div>
-
+<!--    downside   pop up   i  up    -->
     <h2 id="Artikel">Artikel Terbaru</h2>
     <div class="card-container">
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2014/11/03/10/44/camera-514992_1280.jpg" alt="Berita 1" style="width: 3px; height: 150px">
-        <h3>Seorang anggota dewan</h3>
-        <p>Sebuah narasi terkait liga korupsi</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/300x200/?technology" alt="Berita 2">
-        <h3>Judul Berita 2</h3>
-        <p>Berita ini membahas tentang perkembangan teknologi terbaru.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/300x200/?music" alt="Berita 3">
-        <h3>Judul Berita 3</h3>
-        <p>Ulasan konser musik yang diselenggarakan di kota besar.</p>
-      </div>
-    </div>
+        <img src="https://cdn.pixabay.com/photo/2017/09/28/19/49/sculpture-2796698_1280.jpg" alt="Berita 1">
+        <h3>Leonardo da Vinci</h3>       
+  <p>“Seni tidak pernah selesai, hanya ditinggalkan.”
 
-    <h2 id="Audio">Audio</h2>
-    <audio controls>
-      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-      Browser tidak mendukung pemutar audio.
-    </audio>
+Pemikiran Utama:
+Leonardo adalah lambang "homo universalis"—seniman, ilmuwan, dan penemu. Ia memandang seni bukan sekadar ekspresi, tapi hasil pengamatan ilmiah yang dalam terhadap alam dan manusia. Dalam karyanya, seni dan ilmu menyatu dalam harmoni, proporsi, dan anatomi.
+
+Inspirasi Web Galeri Seni:
+
+Tema visual: Presisi, detail tinggi, sketsa anatomi, blueprint
+
+Warna dominan: Sepia, abu-abu lembut, dan aksen emas antik
+
+Fungsi situs: Ruang edukasi—menjelaskan proses artistik seperti studi sketsa, eksperimen warna, dan struktur karya
+
+Kutipan di header: “Mengetahui bagaimana melihat adalah seni terbesar dari semuanya.”
+
+
+Relevansi: Cocok untuk galeri yang menampilkan seni konseptual, teknik tinggi, atau integrasi teknologi</p>
+
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2012/12/25/19/06/monument-72445_1280.jpg" alt="Berita 2">
+        <h3>Friedrich Nietzsche</h3>
+    <p>“Tanpa musik, hidup adalah sebuah kesalahan.”
+
+Pemikiran Utama:
+Nietzsche menganggap seni sebagai pelarian dari absurditas dan penderitaan hidup. Ia membagi seni ke dalam dua kutub: Apollonian (teratur, rasional) dan Dionysian (liar, emosional). Dalam seni, ia lebih memuja sisi Dionysian—kekuatan gelap, emosi meledak, keindahan yang menghancurkan.
+
+Inspirasi Web Galeri Seni:
+
+Tema visual: Grunge, kontras tinggi, nuansa merah darah dan hitam
+
+Warna dominan: Hitam, burgundy, ungu tua, putih keras
+
+Fungsi situs: Galeri dengan kurasi intens—tema penderitaan, psikologi, eksistensi, atau seni eksperimental
+
+Kutipan di header: “Kita memiliki seni agar kita tidak binasa oleh kebenaran.”
+
+
+Relevansi: Cocok untuk galeri seni kontemporer, avant-garde, atau underground.</p>
+
+      </div>
+      <div class="card">
+        <img src="" alt="Berita 3">
+        <h3>Confucius(Kong Hu Chu)</h3>
+   <p>“Setiap hal memiliki keindahannya, tetapi tidak semua orang dapat melihatnya.”
+
+Pemikiran Utama:
+Konfusianisme menjunjung keharmonisan, kebajikan, dan nilai tradisi. Dalam seni, keindahan bukan hanya bentuk, tetapi juga nilai moral, keseimbangan batin, dan hubungan antara manusia dan alam.
+
+Inspirasi Web Galeri Seni:
+
+Tema visual: Estetika alami dan tradisional—bambu, tinta sumi-e, motif awan dan gunung
+
+Warna dominan: Coklat tanah, hijau zamrud, krem, biru langit
+
+Fungsi situs: Mengangkat seni budaya lokal, lukisan tradisional, kaligrafi, seni kerajinan tangan
+
+Kutipan di header: “Seni adalah cermin karakter, bukan sekadar keterampilan.”
+
+
+Relevansi: Ideal untuk galeri seni budaya Nusantara, Asia Timur, atau pameran kerajinan lokal.
+
+
+---
+
+Kalau kamu ingin, aku bisa bantu kamu buatkan satu contoh desain website galeri seni dengan tema dari salah satu filsuf ini. Mau coba pilih yang mana dulu?</p>
+ 
+    </div>     
+    
+ 
+
+    <h2 id="Audio">Audio</h2 >
+    <!--     online track         -->
+  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3264872529/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://benniebone.bandcamp.com/track/songbird-soulful-session-edit-b-bone">Songbird (Soulful Session Edit) B.Bone by Kenny G</a></iframe>
+  
+  
+    <!--            off              -->
+    audio controls
+      source src="<!-- source -->" type="<!-- audio/format -->/"
+      Browser tidak mendukung pemutar audio.          
+    <!--             off             -->
 
     <h2 id="Video">Video</h2>
-    <video controls>
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      Browser tidak mendukung video.
-    </video>
+    <!-- online     videos         -->
+  <iframe width="300" height="315" src="https://www.youtube.com/embed/YZ4B9rEYaJE?si=gYjUxWTNrxdMR-av" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    
   </main>
-
   <footer>
     <p>&copy; 2025 Web Media oleh Kamu</p>
   </footer>
