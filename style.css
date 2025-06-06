@@ -18,9 +18,9 @@ body {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url('https://raw.githubusercontent.com/Cakren574/Project-media453/refs/heads/main/images/Halaman_utama.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-repeat: repeat;   
+  background-repeat: no-repeat;   
   color: white;
   padding: 135px;
   width: 40px;
