@@ -16,25 +16,18 @@ body {
 
   header {
   background-image:
-  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                      url('https://raw.githubusercontent.com/Cakren574/Project-media453/refs/heads/main/images/Halaman_utama.png');
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('https://raw.githubusercontent.com/Cakren574/Project-media453/refs/heads/main/images/Halaman_utama.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;   
   color: white;
   padding: 140px;
-  width: 40%;
-  height:100vh;
+  width: 100%;
+  height:100%;
   textcenter: center;
 }
-@media (max-width: 850px) {
-  header {
-   heiht: 90vh
-  background-position: top center;
-}
-}
   
-
   header h1 {
   font-size: 2.5em;
   font-weight: bold;
