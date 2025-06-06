@@ -20,14 +20,14 @@ body {
                       url('https://raw.githubusercontent.com/Cakren574/Project-media453/refs/heads/main/images/Halaman_utama.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;   
+  background-repeat: repeat;   
   color: white;
-  padding: 135px;
-  width: 30%;
-  height:00vh;
+  padding: 140px;
+  width: 40%;
+  height:100vh;
   textcenter: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   header {
    heiht: 90vh
   background-position: top center;
