@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(270deg, #ed9d8a8f, #c6e3ed8f);
+  background-size: 800% 800%;
+  animation: animateBackground 30s ease infinite;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes animateBackground {
+  0% { background-position: 0% 25%; }
+  25% { background-position: 50% 75%; }
+  100% { background-position: 0% 25%; }
+  50% { background-position: 0% 75%; }
+}
+
+  header {
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),         url('https://raw.githubusercontent.com/Cakren574/Project-media453/refs/heads/main/images/Halaman_utama.png');  
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;   
+  color: white;
+  padding: 135px;
+  width: 30%;
+  height:80%;
+  textcenter: center;
+}
+  
+
+  header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+nav {
+  background-color: #ddd;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('https://raw.githubusercontent.com/Cakren574/Project-media453/refs/heads/main/images/Background_navigasi.png'); 
+  background-size: center;
+  background-position: 90% 80%;
+  background-repeat: no-repeat;
+  weight: 30px;
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1c9b5be;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+/* Gaya untuk galeri */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px; 
+  justify-content: center;   
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Pop-up overlay */
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay img{
+    max-width:90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px tgba(0,0,0,0.5);
+}
+
+   /* Gaya setiap foto */
+ .photo-card {
+  position: relative;
+  width: 200px;
+  text-align: center;
+ }
+ 
+ .photo-card img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 15px;
+  color: #4b0082;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+audio, video {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #4b0082;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }      
+  
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Tombol kembali ke beranda */
+.back-button {
+  position: fixed;
+  bottom: 30px;
+  left: 10px;  
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.back-button i {
+  font-size: 5px;
+}
+
+ /* Tombol like */
+ .like-button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #ff3c74;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button.liked {
+  background-color: #cc2258;
+}
+
+.like-count {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+    
+
+
+}
+
+
