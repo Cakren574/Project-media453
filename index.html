@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valentine's Day - Love is in the Air</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar">
+		<div class="container">
+			<div class="logo">💝 Valentine</div>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#gifts">Gifts</a></li>
+				<li><a href="#album">Album</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section id="home" class="hero">
+		<div class="stars"></div>
+		<div class="container hero-content">
+			<h1 class="hero-title">Love is in the Air</h1>
+			<p class="hero-subtitle">Celebrate the most special day of the year with your beloved</p>
+			<button class="cta-button">Get Started</button>
+		</div>
+	</section>
+
+	<!-- Floating Hearts -->
+	<div class="hearts-container">
+		<div class="heart"></div>
+		<div class="heart"></div>
+		<div class="heart"></div>
+		<div class="heart"></div>
+		<div class="heart"></div>
+	</div>
+
+	<!-- Gifts Section -->
+	<section id="gifts" class="gifts">
+		<div class="container">
+			<h2 class="section-title">Perfect Gift Ideas</h2>
+			<div class="gifts-grid">
+				<div class="gift-card">
+					<div class="gift-icon">💐</div>
+					<h3>Flowers</h3>
+					<p>Beautiful roses and fresh flowers to express your love</p>
+				</div>
+				<div class="gift-card">
+					<div class="gift-icon">💍</div>
+					<h3>Jewelry</h3>
+					<p>Elegant pieces that sparkle as bright as your love</p>
+				</div>
+				<div class="gift-card">
+					<div class="gift-icon">🍫</div>
+					<h3>Chocolates</h3>
+					<p>Sweet treats to share sweet moments together</p>
+				</div>
+				<div class="gift-card">
+					<div class="gift-icon">💌</div>
+					<h3>Love Letter</h3>
+					<p>Write your feelings in a heartfelt message</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Memory Album Section -->
+	<section id="album" class="memory-album">
+		<div class="container">
+			<h2 class="section-title">Our Love Story 📖</h2>
+
+			<!-- Image Upload Section -->
+			<div class="upload-section">
+				<p class="upload-text">📸 Click on any photo to upload your memories!</p>
+			</div>
+
+			<div class="album-container">
+				<!-- Left Page -->
+				<div class="album-page left-page">
+					<div class="page-content">
+						<div class="photo-grid">
+							<div class="photo-card" onclick="triggerUpload(this, 'First Meeting')">
+								<div class="photo-placeholder">📷</div>
+								<p class="photo-caption">First Meeting</p>
+								<input type="file" class="image-input" accept="image/*" style="display: none;">
+							</div>
+							<div class="photo-card" onclick="triggerUpload(this, 'Coffee Date')">
+								<div class="photo-placeholder">📷</div>
+								<p class="photo-caption">Coffee Date</p>
+								<input type="file" class="image-input" accept="image/*" style="display: none;">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Spine -->
+				<div class="album-spine"></div>
+
+				<!-- Right Page -->
+				<div class="album-page right-page">
+					<div class="page-content">
+						<div class="photo-grid">
+							<div class="photo-card" onclick="triggerUpload(this, 'Adventure Time')">
+								<div class="photo-placeholder">📷</div>
+								<p class="photo-caption">Adventure Time</p>
+								<input type="file" class="image-input" accept="image/*" style="display: none;">
+							</div>
+							<div class="photo-card" onclick="triggerUpload(this, 'Special Moment')">
+								<div class="photo-placeholder">📷</div>
+								<p class="photo-caption">Special Moment</p>
+								<input type="file" class="image-input" accept="image/*" style="display: none;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Photo Grid Below Book -->
+			<div class="additional-photos">
+				<h3 class="subsection-title">More Memories Together</h3>
+				<div class="memories-grid">
+					<div class="memory-card" onclick="triggerUpload(this, 'Beach Day')">
+						<div class="memory-placeholder">🌸</div>
+						<p>Beach Day</p>
+						<input type="file" class="image-input" accept="image/*" style="display: none;">
+					</div>
+					<div class="memory-card" onclick="triggerUpload(this, 'Birthday Celebration')">
+						<div class="memory-placeholder">🎂</div>
+						<p>Birthday Celebration</p>
+						<input type="file" class="image-input" accept="image/*" style="display: none;">
+					</div>
+					<div class="memory-card" onclick="triggerUpload(this, 'Stargazing Night')">
+						<div class="memory-placeholder">🌙</div>
+						<p>Stargazing Night</p>
+						<input type="file" class="image-input" accept="image/*" style="display: none;">
+					</div>
+					<div class="memory-card" onclick="triggerUpload(this, 'Holiday Together')">
+						<div class="memory-placeholder">🎄</div>
+						<p>Holiday Together</p>
+						<input type="file" class="image-input" accept="image/*" style="display: none;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Videos Section -->
+	<section id="videos" class="videos-section">
+		<div class="container">
+			<h2 class="section-title">Our Moments in Motion 🎬</h2>
+			<p class="section-subtitle">Share your favorite videos and memories</p>
+
+			<div class="videos-grid">
+				<div class="video-frame">
+					<div class="video-placeholder">🎥</div>
+					<p class="video-caption">First Video</p>
+					<input type="file" class="video-input" accept="video/*" style="display: none;">
+					<video class="video-player" style="display: none;" controls></video>
+				</div>
+				<div class="video-frame">
+					<div class="video-placeholder">🎥</div>
+					<p class="video-caption">Love Story</p>
+					<input type="file" class="video-input" accept="video/*" style="display: none;">
+					<video class="video-player" style="display: none;" controls></video>
+				</div>
+				<div class="video-frame">
+					<div class="video-placeholder">🎥</div>
+					<p class="video-caption">Special Moments</p>
+					<input type="file" class="video-input" accept="video/*" style="display: none;">
+					<video class="video-player" style="display: none;" controls></video>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Photo Album Book Section -->
+	<section id="photoalbum" class="photo-album-section">
+		<div class="container">
+			<h2 class="section-title">Our Photo Album 📚</h2>
+			<p class="section-subtitle">Create your beautiful photo album book - Click to add photos</p>
+
+			<div class="album-book-wrapper">
+				<!-- Photo Album Grid -->
+				<div class="photo-album-grid">
+					<!-- Photo Slot 1 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 2 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 3 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 4 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 5 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 6 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 7 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 8 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 9 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 10 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 11 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+
+					<!-- Photo Slot 12 -->
+					<div class="album-photo-slot" onclick="triggerPhotoUpload(this)">
+						<input type="file" class="album-photo-input" accept="image/*" style="display: none;">
+						<div class="photo-slot-content">
+							<div class="add-icon">➕</div>
+							<p>Click to Add Photo</p>
+						</div>
+						<img class="album-photo-img" style="display: none;">
+					</div>
+				</div>
+			</div>
+
+			<!-- Save Controls -->
+			<div class="save-controls">
+				<h3 class="controls-title">💾 Album Management</h3>
+				<div class="controls-buttons">
+					<button class="control-btn save-btn" onclick="saveAlbumData()">
+						<span class="btn-icon">💾</span>
+						<span class="btn-text">Save Album</span>
+					</button>
+					<button class="control-btn export-btn" onclick="exportAlbumData()">
+						<span class="btn-icon">📥</span>
+						<span class="btn-text">Export</span>
+					</button>
+					<button class="control-btn clear-btn" onclick="clearAlbumData()">
+						<span class="btn-icon">🗑️</span>
+						<span class="btn-text">Clear All</span>
+					</button>
+				</div>
+				<p class="controls-info">Your album is automatically saved to your browser. You can also manually save,
+					export, or clear all data.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="about">
+		<div class="container">
+			<h2 class="section-title">About Valentine's Day</h2>
+			<div class="about-content">
+				<div class="about-text">
+					<p>Valentine's Day is a special occasion celebrated on February 14th, dedicated to love and
+						affection. It's a day to express your deepest feelings to those who matter most.</p>
+					<p>Whether it's romantic love, friendship, or family bonds, this day reminds us to appreciate and
+						celebrate the connections that make life meaningful.</p>
+				</div>
+				<div class="about-image">
+					<div class="heart-large">💕</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact">
+		<div class="container">
+			<h2 class="section-title">Get in Touch</h2>
+			<form class="contact-form">
+				<input type="text" placeholder="Your Name" required>
+				<input type="email" placeholder="Your Email" required>
+				<textarea placeholder="Your Message" rows="5" required></textarea>
+				<button type="submit" class="submit-button">Send Love 💌</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2026 Valentine's Day. Made with ❤️ for love.</p>
+			<div class="social-links">
+				<a href="#" class="social-icon">f</a>
+				<a href="#" class="social-icon">t</a>
+				<a href="#" class="social-icon">i</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="javascript/script.js"></script>
+</body>
+
+</html>
